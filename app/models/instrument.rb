@@ -3,7 +3,7 @@ class Instrument < ApplicationRecord
 
     mount_uploader :image, ImageUploader
 
-    validates :title, :grand, :price, :model, presence: true
+    validates :title, :brand, :price, :model, presence: true
     validates :description, length: {maximum: 1000, too_long: "%{count} characters is the maximum aloud."}
     validates :title, length: {maximum: 100, too_long: "%{count} characters is the maximum aloud."}
     validates :price, numericality: {only_integer: true}, length: {maximum: 7}
