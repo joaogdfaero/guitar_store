@@ -52,7 +52,7 @@ class LineItemsController < ApplicationController
 
   # DELETE /line_items/1 or /line_items/1.json
   def destroy
-    @cart = Card.find(session[:cart_id])
+    @cart = Cart.find(session[:cart_id])
     @line_item.destroy
 
     respond_to do |format|

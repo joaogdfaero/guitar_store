@@ -54,7 +54,7 @@ class CartsController < ApplicationController
     session[:cart_id] = nil
 
     respond_to do |format|
-      format.html { redirect_to carts_url, notice: "Cart was successfully destroyed." }
+      format.html { redirect_to root_path, notice: "Cart was successfully destroyed." }
       format.json { head :no_content }
     end
   end
