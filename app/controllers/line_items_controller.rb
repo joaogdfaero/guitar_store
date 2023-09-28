@@ -1,5 +1,5 @@
 class LineItemsController < ApplicationController
-  inclued CurrentCart
+  include CurrentCart
   before_action :set_line_item, only: %i[ show edit update destroy ]
   before_action :set_cart, only: [:create] 
 
@@ -24,7 +24,7 @@ class LineItemsController < ApplicationController
   # POST /line_items or /line_items.json
   def create
     instrument = Instrument.find(params[:instrument_id])
-    @line_item = @cart.add_instrument(line_item_params)
+    @line_item = @cart.add_instrument(instrument)
 
     respond_to do |format|
       if @line_item.save

@@ -7,7 +7,7 @@ class Cart < ApplicationRecord
         if current_item
             current_item.increment(:quantity)
         else
-            current_item = line_item.build(instrument_id: instrument.id)
+            current_item = line_items.build(instrument_id: instrument.id)
         end
 
         current_item
