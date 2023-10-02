@@ -3,7 +3,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        Venda ou compre seu instrumento dos sonhos!
+        Venda ou compre o seu instrumento dos sonhos na GuitarStore!
       </h1>
     </div>
   </div>
@@ -11,31 +11,30 @@
 <% end %>
 
 <div class="instrument-index-grid pt4">
-  <% @instruments.each do |instrument| %>
+  <% @instruments.each do |instrumento| %>
 
     <div class="instrument border-light">
       <div class="instrument-thumb">
-      <%= link_to image_tag(instrument.image_url(:thumb)), instrument %>
+      <%= link_to image_tag(instrumento.image_url(:thumb)), instrumento %>
 
-      <% if instrument.condition? %>
+      <% if instrumento.condition? %>
         <div class="condition">
-          <span class="tag is-dark"><%= instrument.condition %></span>
+          <span class="tag is-dark"><%= instrumento.condition %></span>
         </div>
       <% end %>
       </div>
 
-
     <div class="pa3">
 
-      <h3 class="fw7 f4 title"><%= link_to instrument.title, instrument %></h3>
+      <h3 class="fw7 f4 title"><%= link_to instrumento.title, instrumento %></h3>
 
-      <p class="has-text-gray fg pt1">Sold by <%= instrument.user.name %></p>
+      <p class="has-text-gray fg pt1">Vendido por <%= instrumento.user.name %></p>
 
-      <p class="f3 fw6 has-text-right pt2 price"><%= number_to_currency(instrument.price) %></p>
+      <p class="f3 fw6 has-text-right pt2 price"><%= number_to_currency(instrumento.price) %></p>
 
-      <% if instrument_author(instrument) %>
-         <%= link_to 'Edit', edit_instrument_path(instrument), class: "button is-small" %>
-         <%= link_to 'Delete', instrument, method: :delete, data: { confirm: "Are you sure ?" }, class: "button is-small" %>
+      <% if instrument_author(instrumento) %>
+         <%= link_to 'Editar', edit_instrument_path(instrumento), class: "button is-small" %>
+         <%= link_to 'Excluir', instrumento, method: :delete, data: { confirm: "Tem certeza?" }, class: "button is-small" %>
       <% end %>
 
     </div>

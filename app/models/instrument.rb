@@ -9,15 +9,15 @@ class Instrument < ApplicationRecord
     validates :title, length: {maximum: 100, too_long: "%{count} characters is the maximum aloud."}
     validates :price, length: {maximum: 7}
 
-    BRAND = %w{ Fender Gibson Epiphone ESP Martin Dean Taylor Jackson PRS  Ibanez Charvel Washburn }
-    FINISH = %w{ Black White Navy Blue Red Clear Satin Yellow Seafoam }
-    CONDITION = %w{ New Excellent Mint Used Fair Poor }
+    BRAND = %w{ Fender Gibson Epiphone ESP Martin Dean Taylor Jackson PRS Ibanez Charvel Washburn }
+    FINISH = %w{ Preto Branco Azul Marinho Vermelho Transparente Fosco Amarelo Seafoam }
+    CONDITION = %w{ Novo Excelente Novo Usado Regular Ruim }
 
     private
 
     def not_referenced_by_any_line_item
         unless line_items.empty?
-            erros.add(:base, "Line items present")
+            erros.add(:base, "Items no carrinho!")
             throw :abort
         end
     end
