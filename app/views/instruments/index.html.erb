@@ -34,7 +34,7 @@
 
       <% if instrument_author(instrumento) %>
          <%= link_to 'Editar', edit_instrument_path(instrumento), class: "button is-small" %>
-         <%= link_to 'Excluir', instrumento, method: :delete, data: { confirm: "Tem certeza?" }, class: "button is-small" %>
+         <%= link_to 'Excluir', instrumento, method: :delete, class: "button is-small" %>
       <% end %>
 
     </div>
