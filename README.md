@@ -36,9 +36,17 @@
 ● Users can manage the items in their shopping cart.
 
 
-## Screens 📺
+## How to use 📺
 
+### 1 - Create your account.
 
+### 2 - Click on "Sell (Vender)" to sell your item.
+
+### 3 - Add the information, description and photo of your item.
+
+### 3 - Click on any instrument to check it's description. Click on "Add to Chart (Adicionar ao Carrinho)" to buy the Item;
+
+### 4 - Manage instruments in your shopping cart.
 
 
 ## Technologies
