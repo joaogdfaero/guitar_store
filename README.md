@@ -40,7 +40,13 @@
 
 # 1 - Create your account.
 
-# 2 - Click on "Sell (Vender)" to sell your item.
+![image](https://github.com/joaogdfaero/guitar_store/assets/103076610/1bc60414-fdcd-4c00-a767-73476a7195c0)
+
+
+# 2 - Onced logged in, click on "Sell (Vender)" to sell your item.
+
+![image](https://github.com/joaogdfaero/guitar_store/assets/103076610/f9bb2f26-a56d-4142-8428-8b0412f4ed78)
+
 
 # 3 - Add the information, description and photo of your item.
 
