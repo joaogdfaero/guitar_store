@@ -13,7 +13,7 @@
 <h3 align="center">Guitar Store</h3>
 
   <p align="center">
-    A website built with Ruby on Rails...
+    A eCommerce music shop website built with Ruby on Rails, where users can buy and sell used instruments.
      <br />
     <br />
     <br />
