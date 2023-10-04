@@ -27,7 +27,14 @@
 ## Project Requirements :ballot_box_with_check:
 ● User registration and login;
 
-● 
+● Users can list their instruments for sale.
+
+● Users can purchase instruments that are listed for sale.
+
+● Users can add instruments to their shopping cart.
+
+● Users can manage the items in their shopping cart.
+
 
 ## Demo 📺
 
