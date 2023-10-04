@@ -40,7 +40,7 @@ Acess at: ****
 ## Technologies
 * Ruby 3.1.4
 * Rails 7.0.4
-* PostgreSQL
+* PostgreSQL 14.9
 
 ## Installation
 1. **Clone this repository**  
