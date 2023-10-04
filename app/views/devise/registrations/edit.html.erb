@@ -1,48 +1,50 @@
-<h2>Editar conta:</h2>
+<div class="login-form">
+  <h2 class="login-title">Editar conta:</h2>
 
-<%= form_for(resource, url: registration_path(resource_name), method: :put, local: false) do |form| %>
-  <% if resource.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(resource.errors.count, "error") %> prohibited this <%= resource_name %> from being saved:</h2>
+  <%= form_for(resource, url: registration_path(resource_name), method: :put, local: false) do |form| %>
+    <% if resource.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(resource.errors.count, "error") %> prohibited this <%= resource_name %> from being saved:</h2>
 
-      <ul>
-        <% resource.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+        <ul>
+          <% resource.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <strong><%= form.label :email %></strong><br />
+      <%= form.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <p>Aguardando confirmação atualmente para: <%= resource.unconfirmed_email %></p>
+    <% end %>
+
+    <div class="field">
+      <strong><%= form.label :password, 'Senha:', style: "display: block" %></strong>
+      <%= form.password_field :password, class: "form-control", placeholder: "Deixe em branco se não deseja alterá-lo", autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <strong><%= form.label :password_confirmation, 'Confirme a Senha:', style: "display: block" %></strong>
+      <%= form.password_field :password_confirmation, class: "form-control", autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <strong><%= form.label :current_password, 'Senha Atual:', style: "display: block" %></strong>
+      <%= form.password_field :current_password, class: "form-control", required: true, autocomplete: "current-password" %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Atualizar", class: "btn btn-primary" %>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :email %><br />
-    <%= form.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <div>Insatisfeito? <%= button_to "Cancelar minha conta", registration_path(resource_name), data: { confirm: "Tem certeza?", turbo_confirm: "Tem certeza?" }, method: :delete %></div>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <p>Aguardando confirmação atualmente para: <%= resource.unconfirmed_email %></p>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :password, 'Senha:', style: "display: block" %>
-    <%= form.password_field :password, class: "form-control", placeholder: "Deixe em branco se não deseja alterá-lo", autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password_confirmation, 'Confirme a Senha:', style: "display: block" %>
-    <%= form.password_field :password_confirmation, class: "form-control", autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= form.label :current_password, 'Senha Atual:', style: "display: block" %>
-    <%= form.password_field :current_password, class: "form-control", required: true, autocomplete: "current-password" %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Atualizar", class: "btn btn-primary" %>
-  </div>
-<% end %>
-
-<div>Insatisfeito? <%= button_to "Cancelar minha conta", registration_path(resource_name), data: { confirm: "Tem certeza?", turbo_confirm: "Tem certeza?" }, method: :delete %></div>
-
-<%= link_to "Voltar", :back %>
+  <%= link_to "Voltar", :back %>
+</div>
 
