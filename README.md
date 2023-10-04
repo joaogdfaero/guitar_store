@@ -36,13 +36,10 @@
 ● Users can manage the items in their shopping cart.
 
 
-## Demo 📺
+## Screens 📺
 
 
 
-## Deploy link
-
-Acess at: ****
 
 ## Technologies
 * Ruby 3.1.4
