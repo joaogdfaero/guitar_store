@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/joaogdfaero/guitar_store/">
-    <img src="guitar_storelogo.png" alt="Logo" width="220" height="220">
+    <img src="guitarstoreicon-removebg-preview.png" alt="Logo" width="220" height="220">
   </a>
 
 <h3 align="center">Guitar Store</h3>
