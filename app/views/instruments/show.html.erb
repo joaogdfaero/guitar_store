@@ -1,5 +1,3 @@
-<% content_for :body_class, 'bg-light' %>
-
 <section class="section instrumento-show">
   <div class="columns">
     <div class="column is-8">
@@ -21,7 +19,7 @@
         <%= image_tag(@instrument.image_url(:default)) %>
       </div>
 
-      <div class="content pa4 mt3 bg-white border-radius-3">
+      <div class="content pa4 mt3 bg-gray border-radius-3">
 
       <h3 class="subtitle is-4">Descrição</h3>
       <%= @instrument.description %>
@@ -59,7 +57,7 @@
     </div>
     </div>
     <div class="column is-3 is-offset-1">
-      <div class="bg-white pa4 border-radius-3 has-text-centered">
+      <div class="bg-gray pa4 border-radius-3 has-text-centered">
         <h4 class="title is-5"><%= number_to_currency(@instrument.price) %></h4>
         <p class="mb4">Vendido por <%= @instrument.user.name %></p>
         <%= button_to 'Adicionar ao carrinho', line_items_path(instrument_id: @instrument), class: 'button is-warning add-to-cart' %>

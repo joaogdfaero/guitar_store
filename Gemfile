@@ -7,7 +7,7 @@ ruby "3.1.4"
 gem "rails", "~> 7.0.7", ">= 7.0.7.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem "sprockets-rails", "~> 3.4.2"
 
 # Use pg as the database for Active Record
 gem "pg", "~> 1.1"
@@ -81,3 +81,11 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "dockerfile-rails", ">= 1.5", :group => :development
+
+gem "redis", "~> 5.0"
+
+gem "sentry-ruby", "~> 5.11"
+
+gem "sentry-rails", "~> 5.11"
