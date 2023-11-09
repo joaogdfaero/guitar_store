@@ -36,7 +36,12 @@
 ● Users can manage the items in their shopping cart.
 
 
-## How to use 📺
+## Demonstration video 📺
+
+https://github.com/joaogdfaero/guitar_store/assets/103076610/975b39a4-ff36-4116-921d-04e0517d2ddc
+
+
+## How to use 
 
 # 1 - Create your account.
 
