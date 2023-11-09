@@ -50,9 +50,18 @@
 
 # 3 - Add the information, description and photo of your item.
 
+![image](https://github.com/joaogdfaero/guitar_store/assets/103076610/e16182a9-3997-43b6-a6b1-89c198eeb849)
+
+
 # 3 - Click on any instrument to check it's description. Click on "Add to Chart (Adicionar ao Carrinho)" to buy the Item;
 
+![image](https://github.com/joaogdfaero/guitar_store/assets/103076610/758a69eb-9097-434f-852e-4c3aa2e27d1e)
+
+
 # 4 - Manage instruments in your shopping cart.
+
+![image](https://github.com/joaogdfaero/guitar_store/assets/103076610/2e02d84a-6d48-47cd-8b92-10bbce5c5748)
+
 
 
 ## Technologies
