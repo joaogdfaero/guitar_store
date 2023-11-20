@@ -85,6 +85,7 @@ test:
 #
 production:
   <<: *default
-  database: guitarstore_production
-  username: guitarstore
-  password: <%= ENV["GUITARSTORE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+ # database: guitarstore_production
+ # username: guitarstore
+ # password: <%= ENV["GUITARSTORE_DATABASE_PASSWORD"] %>
