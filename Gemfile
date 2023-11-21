@@ -62,6 +62,9 @@ group :development, :test do
   gem 'better_errors'
   gem 'guard'
   gem 'guard-livereload'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails', '~> 6.2'
+  gem 'faker'
 end
 
 group :development do
