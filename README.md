@@ -127,5 +127,5 @@ https://github.com/joaogdfaero/guitar_store/assets/103076610/975b39a4-ff36-4116-
 [Laravel-url]: https://laravel.com
 [Bootstrap.com]: https://img.shields.io/github/forks/joaogdfaero/guitar_store.svg?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com
+
+
