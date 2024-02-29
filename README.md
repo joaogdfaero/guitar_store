@@ -92,7 +92,6 @@ https://github.com/joaogdfaero/guitar_store/assets/103076610/975b39a4-ff36-4116-
 
 6. **The server will start on port: 3000 - access:**    
 ` http://localhost:3000 `
-
 ##
 <br>Author: <strong>João Gabriel Dal Forno (joao.dal@acad.ufsm.br)</strong>
 
